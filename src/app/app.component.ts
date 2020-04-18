@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-links-votes-app';
+  
+  addLink(){
+    console.log("sendind sata");
+    return false;
+  }
 }
