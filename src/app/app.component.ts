@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Link} from './link/link.model'
 
 @Component({
   selector: 'app-root',
@@ -6,9 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  links: String[];
   
-  addLink(){
-    console.log("sendind sata");
+  addLink(title: HTMLInputElement, link: HTMLInputElement){
+    console.log("values: ",title.value, link.value);
     return false;
   }
 }
