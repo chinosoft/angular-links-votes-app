@@ -1,7 +1,7 @@
 export class Link {
   title: String;
   link: String;
-  votes: Number;
+  votes: number;
 
   constructor(title: String, link: String, votes?: number){
     this.title = title;
@@ -9,11 +9,11 @@ export class Link {
     this.votes = votes || 0;
   }
 
-  voteUp(){
+  voteUp() {
     this.votes++;
   }
 
-  voteDown(){
+  voteDown() {
     this.votes--;
   }
 }
